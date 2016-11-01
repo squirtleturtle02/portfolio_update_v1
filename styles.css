@@ -21,6 +21,8 @@ a:hover {
   color: #6633ff;
 }
 
+
+
 /* Section Styles */
 
 .main-nav {
@@ -76,6 +78,33 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+header p {
+  text-decoration: none;
+}
+/*portfolio-gallery*/
+.portfolio-description{
+color:black;
+background-color: #efefef;
+}
+
+#portfolio-gallery {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+#portfolio-gallery li {
+  float: left;
+  width:45%;
+  margin:2.5%;
+  background-color: #525857;
+}
+#portfolio-gallery li a p {
+  margin: 0;
+  padding: 2.5%;
+  font-size: 2em;
+  color: #ffffff;
+}
 .tag {
   background-color: #efefef;
   color: black;
@@ -124,6 +153,7 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  display: block;
 }
 
 footer .copyright {
