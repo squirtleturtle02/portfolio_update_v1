@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +20,8 @@ a {
 a:hover {
   color: #6633ff;
 }
+
+
 
 /* Section Styles */
 
@@ -57,7 +59,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/mke-skyline.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -69,12 +71,40 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 25%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all 2s;
+  box-shadow: 5px 5px black;
+  filter:grayscale(1);
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+}
+
+header p {
+  text-decoration: none;
+}
+/*portfolio-gallery*/
+.portfolio-description{
+color:black;
+background-color: #efefef;
+}
+
+#portfolio-gallery {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+#portfolio-gallery li {
+  float: left;
+  width:45%;
+  margin:2.5%;
+}
+#portfolio-gallery li a p {
+  margin: 0;
+  padding: 2.5%;
+  font-size: 2em;
+  color: #000000;
 }
 .tag {
   background-color: #efefef;
@@ -83,7 +113,7 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
   color: yellow;
@@ -101,7 +131,12 @@ header .profile-image:hover {
 .card:hover {
   border-color: #ff99ff;
 }
-
+img.card-image{
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 5%;
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -124,6 +159,7 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  display: block;
 }
 
 footer .copyright {
@@ -169,10 +205,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +240,3 @@ a.social:hover {
   }
 
 }
-
