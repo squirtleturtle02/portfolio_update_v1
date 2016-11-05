@@ -131,7 +131,12 @@ background-color: #efefef;
 .card:hover {
   border-color: #ff99ff;
 }
-
+img.card-image{
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 5%;
+}
 ul.skills {
   padding: 0;
   text-align: center;
