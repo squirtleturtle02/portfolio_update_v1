@@ -71,9 +71,11 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 25%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all 2s;
+  box-shadow: 5px 5px black;
+  filter:grayscale(1);
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
@@ -97,13 +99,12 @@ background-color: #efefef;
   float: left;
   width:45%;
   margin:2.5%;
-  background-color: #525857;
 }
 #portfolio-gallery li a p {
   margin: 0;
   padding: 2.5%;
   font-size: 2em;
-  color: #ffffff;
+  color: #000000;
 }
 .tag {
   background-color: #efefef;
